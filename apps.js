@@ -58,12 +58,12 @@ window.ARLO_APPS = [
     ]
   },
   {
-    id: "ebs",
-    name: "EBS",
+    id: "betterbs",
+    name: "BETTERBS",
     tagline: "A light screen and game recorder, written in Rust, that does not drop frames.",
     description:
-      "EBS records your screen, a window or a game with almost no slowdown. It is written in Rust, captures without touching the game, encodes straight on the graphics card and keeps every audio source on its own track. The Optimise button tests your PC and picks the best quality it can handle.",
-    icon: "assets/ebs-egg.png",
+      "BETTERBS (once called EBS) records your screen, a window or a game with almost no slowdown. It is written in Rust, captures without touching the game, encodes straight on the graphics card and keeps every audio source on its own track. The Optimise button tests your PC and picks the best quality it can handle.",
+    icon: "assets/betterbs-egg.png",
     category: "recording",
     status: "ready",
     statusLabel: "Ready",
@@ -87,12 +87,12 @@ window.ARLO_APPS = [
       "Encoder checks run in a separate process, so a crash never takes the app down"
     ],
     downloads: [
-      { label: "Download for Windows", file: "downloads/ebs-windows.zip", kind: "app" },
-      { label: "Source code", file: "downloads/ebs-source.zip", kind: "source" }
+      { label: "Download for Windows", file: "downloads/betterbs-windows.zip", kind: "app" },
+      { label: "Source code", file: "downloads/betterbs-source.zip", kind: "source" }
     ],
     links: [
-      { label: "User guide", url: "https://github.com/arlobruni67/ebs/blob/main/docs/USER_GUIDE.md", icon: "book" },
-      { label: "GitHub", url: "https://github.com/arlobruni67/ebs", icon: "code" }
+      { label: "User guide", url: "https://github.com/arlobruni67/betterbs/blob/main/docs/USER_GUIDE.md", icon: "book" },
+      { label: "GitHub", url: "https://github.com/arlobruni67/betterbs", icon: "code" }
     ],
     shots: []
   }

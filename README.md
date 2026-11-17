@@ -1,6 +1,6 @@
 # Arlo Maker
 
-The home of every app made by Arlo: **ARLO STUDIO** (video editor) and **EBS** (screen and game recorder).
+The home of every app made by Arlo: **ARLO STUDIO** (video editor) and **BETTERBS** (screen and game recorder).
 
 Website: https://arlobruni67.github.io/arlo-maker/
 
