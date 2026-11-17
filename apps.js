@@ -44,6 +44,10 @@ window.ARLO_APPS = [
       { label: "Download for Windows", file: "downloads/arlo-studio-windows.zip", kind: "app" },
       { label: "Source code", file: "downloads/arlo-studio-source.zip", kind: "source" }
     ],
+    links: [
+      { label: "User guide", url: "https://github.com/arlobruni67/arlo-studio/blob/main/docs/USER_GUIDE.md", icon: "book" },
+      { label: "GitHub", url: "https://github.com/arlobruni67/arlo-studio", icon: "code" }
+    ],
     shots: [
       { src: "assets/shots/studio-edit.png", caption: "Edit page with the timeline" },
       { src: "assets/shots/studio-fx.png", caption: "Transitions browser and the Iris wipe" },
@@ -85,6 +89,10 @@ window.ARLO_APPS = [
     downloads: [
       { label: "Download for Windows", file: "downloads/ebs-windows.zip", kind: "app" },
       { label: "Source code", file: "downloads/ebs-source.zip", kind: "source" }
+    ],
+    links: [
+      { label: "User guide", url: "https://github.com/arlobruni67/ebs/blob/main/docs/USER_GUIDE.md", icon: "book" },
+      { label: "GitHub", url: "https://github.com/arlobruni67/ebs", icon: "code" }
     ],
     shots: []
   }

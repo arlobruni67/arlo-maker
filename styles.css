@@ -267,10 +267,11 @@ mark { background: var(--baby-3); color: var(--navy); border-radius: 4px; paddin
 }
 .dl-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
 .dl-card:hover .app-icon { transform: rotate(-6deg) scale(1.05); }
-.dl-info { flex: 1; min-width: 0; }
+.dl-card { flex-wrap: wrap; }
+.dl-info { flex: 1 1 220px; min-width: 0; }
 .dl-info h3 { font-size: 1.4rem; }
 .dl-info p { margin: 2px 0 0; color: var(--ink-2); font-size: .9rem; }
-.dl-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+.dl-btns { display: flex; gap: 10px; flex-wrap: wrap; justify-content: flex-end; margin-left: auto; }
 .btn.dl { padding: 11px 20px; }
 .btn.dl:hover svg { transform: translateY(2px); }
 .btn.dl .size { font-weight: 600; opacity: .7; font-size: .8rem; }

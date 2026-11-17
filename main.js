@@ -239,7 +239,17 @@
   const dlButtons = (a) => (a.downloads || []).map((d) => `
     <a class="btn ${d.kind === "app" ? "primary" : "ghost"} dl" href="${fileUrl(d.file)}" download>
       ${dlIcon}<span>${esc(d.label)}</span><small class="size" data-size="${d.file}" hidden></small>
+    </a>`).join("") + linkButtons(a);
+  const linkIcons = {
+    book: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5z"/><path d="M4 19a2 2 0 0 1 2-2h13"/></svg>',
+    code: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>'
+  };
+  function linkButtons(a) {
+    return (a.links || []).map((l) => `
+    <a class="btn ghost dl" href="${esc(l.url)}" target="_blank" rel="noopener">
+      ${linkIcons[l.icon] || ""}<span>${esc(l.label)}</span>
     </a>`).join("");
+  }
   $("#dlGrid").innerHTML = apps.filter((a) => a.downloads && a.downloads.length).map((a) => `
     <article class="dl-card reveal">
       <div class="app-icon"><img src="${a.icon}" alt=""></div>
