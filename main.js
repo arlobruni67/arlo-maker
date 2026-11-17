@@ -229,7 +229,7 @@
   const lic = window.ARLO_LICENSE || {};
   const dlIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>';
   // local preview serves the zips from downloads/; online they come from the GitHub release
-  const online = /github\.io$/.test(location.hostname) && window.ARLO_RELEASE;
+  const online = !/^(localhost|127\.0\.0\.1|\[::1\]|)$/.test(location.hostname) && window.ARLO_RELEASE;
   const fileUrl = (f) => (online ? window.ARLO_RELEASE + f.split("/").pop() : f);
   const manifest = fetch("downloads/manifest.json").then((r) => (r.ok ? r.json() : {})).catch(() => ({}));
   const fmt = (b) => (b ? (b >= 1e6 ? (b / 1e6).toFixed(1) + " MB" : Math.max(1, Math.round(b / 1e3)) + " KB") : "");
