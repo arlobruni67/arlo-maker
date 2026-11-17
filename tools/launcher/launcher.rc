@@ -1,0 +1,29 @@
+#include <windows.h>
+
+1 ICON "arlo.ico"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION 0,1,0,0
+PRODUCTVERSION 0,1,0,0
+FILEOS VOS_NT_WINDOWS32
+FILETYPE VFT_APP
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904B0"
+    BEGIN
+      VALUE "CompanyName", "Arlo"
+      VALUE "FileDescription", "ARLO STUDIO"
+      VALUE "FileVersion", "0.1.0"
+      VALUE "InternalName", "ARLO STUDIO"
+      VALUE "LegalCopyright", "Copyright (C) 2026 Arlo. GPL-3.0-or-later."
+      VALUE "OriginalFilename", "ARLO STUDIO.exe"
+      VALUE "ProductName", "ARLO STUDIO"
+      VALUE "ProductVersion", "0.1.0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x0409, 1200
+  END
+END

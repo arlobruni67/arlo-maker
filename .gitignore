@@ -1,0 +1,11 @@
+# big or generated: the zips go on the GitHub release, not in the repo
+downloads/*.zip
+build/
+tools/media/
+tools/launcher/*.exe
+tools/launcher/*.pdb
+tools/launcher/arlo.ico
+.claude/
+__pycache__/
+*.pyc
+tools/studio_modules.json
