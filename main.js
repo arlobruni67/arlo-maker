@@ -332,7 +332,7 @@
   $(".m-stage").addEventListener("pointerdown", (e) => (sx = e.clientX));
   $(".m-stage").addEventListener("pointerup", (e) => { if (sx !== null && Math.abs(e.clientX - sx) > 50) showShot(shotIdx + (e.clientX < sx ? 1 : -1)); sx = null; });
 
-  // deep link: index.html#app/betterbs (old #app/ebs links still work)
+  // deep link: index.html#app/ebs (#app/betterbs links from the short BETTERBS rename still work)
   const m = location.hash.match(/^#app\/(.+)$/);
-  if (m) openApp({ ebs: "betterbs" }[m[1]] || m[1]);
+  if (m) openApp({ betterbs: "ebs" }[m[1]] || m[1]);
 })();

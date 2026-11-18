@@ -38,14 +38,14 @@ APPS = {
                        "NumPy, SciPy, OpenCV, faster-whisper, CTranslate2 and ONNX Runtime; each keeps its "
                        "own licence (see the *.dist-info folders in runtime/Lib/site-packages).",
     },
-    "betterbs": {
+    "ebs": {
         "root": Path(r"D:\EBS-rs"),
-        "name": "BETTERBS",
-        "app_dir": Path(r"D:\Apps\BETTERBS"),
-        "app_files": ["BETTERBS.exe", "betterbs.ico", "*.dll"],
+        "name": "EBS",
+        "app_dir": Path(r"D:\Apps\EBS"),
+        "app_files": ["EBS.exe", "ebs.ico", "*.dll"],
         "requires": ("Windows 10 or 11 (64-bit). A graphics card with NVENC (NVIDIA) or AMF (AMD) is\n"
-                     "best; BETTERBS also records on the CPU."),
-        "third_party": f"BETTERBS uses FFmpeg {FFMPEG_VERSION}, licensed GPL-3.0. "
+                     "best; EBS also records on the CPU."),
+        "third_party": f"EBS uses FFmpeg {FFMPEG_VERSION}, licensed GPL-3.0. "
                        "FFmpeg source: https://ffmpeg.org/download.html and "
                        "https://github.com/BtbN/FFmpeg-Builds (build scripts).",
     },
